@@ -3,6 +3,7 @@ lst = [1, 2, 3, 4, 5]
 n = 5
 r = 3
 
+# 부분집합 만들기
 def comb(idx, R, selected):
 
     # 종료 조건
@@ -21,6 +22,7 @@ def comb(idx, R, selected):
     selected.pop()
     comb(idx+1, R+1, selected)
 
+# r개 짜리 조합 만들기
 # R개 고를 때 까지 계속 선택
 def comb2(idx, selected):
     # 종료 조건
