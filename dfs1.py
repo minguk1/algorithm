@@ -25,7 +25,7 @@ def dfs(s, V):
                 #내가 최근에 방문했던 정점을 스택에 넣어 놓았음
                 #하나 꺼내서 그 위치로 돌아간다.
             if stack: #스택이 비어있지 않다면
-                i == stack.pop()
+                i = stack.pop()
             else: #스택이 비어있다면
                 break
     return

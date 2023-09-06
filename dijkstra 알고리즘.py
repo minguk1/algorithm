@@ -24,7 +24,7 @@ def dijkstra(s, V):
     # s와 연결된 e번 정점, 가중치 w에 대해
     for e, w in adjl[s]:
         D[e] = w
-
+        print(D)
     # 남은 정점의 비용을 결정
 
     for _ in range(V):
@@ -38,12 +38,17 @@ def dijkstra(s, V):
             if U[i] == 0 and minV > D[i]:
                 minV = D[i]
                 t = i
+                print(t)
         # 최소인 t를 찾았다
         U[t] = 1
+        print(_, t)
+
+        # 이제 최소 정점인 t를 확정 지었으니 t에서 더 나아가 최솟값을 구해준다.
         # 이전까지 내가 알고 있던 비용과 새로 경로가 만들어 졌을 때 비용
         # 그 중에서 최솟값을 선택해서 최신화
         for e, w in adjl[t]:
             D[e] = min(D[e], D[t] + w)
+            print(_,t, e, D)
 
 
 
