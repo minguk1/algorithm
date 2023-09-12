@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dd589c-2b3d-47c7-b1df-4cae4ee5e949" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/프로그래머스 표 편집.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준 2805 나무 자르기.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/최소 신장 트리.py" beforeDir="false" afterPath="$PROJECT_DIR$/최소 신장 트리.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/프로그래머스 표 편집.py" beforeDir="false" afterPath="$PROJECT_DIR$/프로그래머스 표 편집 도전중.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.프로그래머스 표 편집">
+  <component name="RunManager" selected="Python.백준 2805 나무 자르기">
     <configuration name="프로그래머스 네트워크 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="프로그래머스 네트워크" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="백준 2805 나무 자르기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/프로그래머스 네트워크.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준 2805 나무 자르기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="프로그래머스 표 편집" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="프로그래머스 표 편집 도전중" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +116,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/프로그래머스 표 편집.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\KMG\Desktop\algorithm\algorithm\프로그래머스 표 편집 도전중.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.프로그래머스 표 편집" />
+        <item itemvalue="Python.백준 2805 나무 자르기" />
+        <item itemvalue="Python.프로그래머스 표 편집 도전중" />
         <item itemvalue="Python.dijkstra 알고리즘" />
         <item itemvalue="Python.프로그래머스 네트워크 2" />
         <item itemvalue="Python.tree 표현" />
-        <item itemvalue="Python.프로그래머스 네트워크" />
       </list>
     </recent_temporary>
   </component>
