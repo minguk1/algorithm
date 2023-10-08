@@ -8,13 +8,13 @@ b = sum(trees)
 
 while a <= b:
 
-    mid = ( a + b) // 2
+    mid = (a + b) // 2
 
     cut_tree = 0
 
     for tree in trees:
         if tree > mid:
-            cut_tree +=  (tree - mid)
+            cut_tree += (tree - mid)
 
     if cut_tree >= m:
         a = mid + 1

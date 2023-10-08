@@ -1,45 +1,18 @@
 n = 10
-info = [0,0,0,0,0,0,0,0,3,4,3]
+info = [0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 3]
 
 max_difference = 0
 final = [-1]
 def solution(n, info):
     lion = [0] * 11
     # global final
-    t = []
+
 
     def select(i, lion, cnt):
         # 종료 조건
         global final
         global max_difference
         # print(max_difference)
-        if cnt == n:
-            # print(lion, i)
-            # print(sum(lion))
-            peach = 0
-            rion = 0
-            for i in range(11):
-                if info[i] >= lion[i] and info[i] > 0:
-                    peach += (10-i)
-                elif info[i] < lion[i] and lion[i] > 0:
-                    rion += (10-i)
-
-            if rion-peach > max_difference:
-                max_difference = rion-peach
-                final = lion
-                # print(max_difference)
-                # print(final)
-            elif rion-peach == max_difference:
-                for i in range(11):
-                    if lion[10-i] > final[10-i]:
-                        final = lion
-                        break
-                    elif lion[10-i] == final[10-i]:
-                        continue
-                    else:
-                        break
-            return
-
         if i == 11:
             # print(n-cnt)
             if cnt < n:
@@ -55,13 +28,14 @@ def solution(n, info):
 
             if rion - peach > max_difference:
                 max_difference = rion - peach
-                final = lion
+                final = lion.copy()
                 # print(max_difference)
-                print(final)
+                # print(final, i)
             elif rion - peach == max_difference:
                 for i in range(11):
                     if lion[10 - i] > final[10 - i]:
-                        final = lion
+                        final = lion.copy()
+                        # print(final, i)
                         break
                     elif lion[10 - i] == final[10 - i]:
                         continue
@@ -71,6 +45,36 @@ def solution(n, info):
             lion[10] -= (n-cnt)
             # print(sum(lion))
             return
+
+        if cnt == n:
+            # print(lion, i)
+            # print(sum(lion))
+            peach = 0
+            rion = 0
+            for i in range(11):
+                if info[i] >= lion[i] and info[i] > 0:
+                    peach += (10-i)
+                elif info[i] < lion[i] and lion[i] > 0:
+                    rion += (10-i)
+
+            if rion-peach > max_difference:
+                max_difference = rion-peach
+                final = lion.copy()
+                # print(max_difference)
+                # print(final,i)
+            elif rion-peach == max_difference:
+                for i in range(11):
+                    if lion[10-i] > final[10-i]:
+                        final = lion.copy()
+                        # print(final)
+                        return
+                    elif lion[10-i] == final[10-i]:
+                        continue
+                    else:
+                        break
+            return
+
+
 
         k = info[i] + 1
 
@@ -90,6 +94,8 @@ def solution(n, info):
     select(0, lion, 0)
     print(final)
     answer = final
+    print(answer)
     return answer
 
 print(solution(n, info))
+# solution(n, info)
